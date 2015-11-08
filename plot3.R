@@ -13,7 +13,7 @@ subdf <- df[df$Date >= as.Date("2007-02-01") & df$Date <= as.Date("2007-02-02"),
 png("plot3.png",  width = 480, height = 480)
 
 # Bulid the plot
-plot(subdf$DateTime, subdf$Sub_metering_1, type="n", xlab="", ylab="Global Active Power (kilowatts)")
+plot(subdf$DateTime, subdf$Sub_metering_1, type="n", xlab="", ylab="Energy sub metering")
 lines(subdf$DateTime, subdf$Sub_metering_1, col="black")
 lines(subdf$DateTime, subdf$Sub_metering_2, col="red")
 lines(subdf$DateTime, subdf$Sub_metering_3, col="blue")
